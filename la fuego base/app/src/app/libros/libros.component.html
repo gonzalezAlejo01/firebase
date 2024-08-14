@@ -1,0 +1,19 @@
+<button id="btn-menu" (click)="logOut()">Cerrar sesión</button>
+    <div class="libros-container">
+        <div class="libros">
+            <p>Agregar libro</p>
+            <input #nombre placeholder="Nombre" type="text">
+            <input #autor placeholder="Autor" type="text">
+            <input #editorial placeholder="Editorial" type="text">
+            <button (click)="postLibro(nombre.value, autor.value, editorial.value)">Agregar</button>
+            <p>Borrar libro</p>
+            <input #id placeholder="Id" type="text">
+            <button (click)="deleteLibro(id.value)">Borrar</button>
+            <p>Modificar libro</p>
+            <input #id2 placeholder="Id" type="text">
+            <input #nombre2 placeholder="Nombre" type="text">
+            <input #autor2 placeholder="Autor" type="text">
+            <input #editorial2 placeholder="Editorial" type="text">
+            <button (click)="modifyLibro(id2.value, nombre2.value, autor2.value, editorial2.value)">Modificar</button>
+        </div>
+    </div>

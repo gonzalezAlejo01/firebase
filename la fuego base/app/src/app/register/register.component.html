@@ -1,0 +1,18 @@
+<button id="btn-menu" routerLink="">Menu</button>
+<div class="register-container">
+    <div class="register">
+        <p id="title">Registro</p>
+        <div class="2">
+            <input #name id="name" placeholder="Nombre">
+            <input #mail id="mail" placeholder="Correo">
+        </div>
+        <input #password id="password" placeholder="Contraseña" type="password">
+        <button (click)="register(mail.value, password.value)" id="btn">Registrarse</button>
+        <p style="color: red;">{{error}}</p>
+        <a id="link" routerLink="/login">¿Ya tenés cuenta?</a>
+        
+    </div>
+    
+</div>
+
+
